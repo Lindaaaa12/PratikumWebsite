@@ -1,50 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu Makanan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Makanan</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <center>
-    <h1>Daftar Menu Restoran Linda</h1>
+    <center>
+        <h1 style="color:grey; font-family: Tahoma, Verdana, sans-serif;">Daftar Menu Restoran Linda</h1>
+        <div class="logo-container">
+            <img src="https://th.bing.com/th/id/OIP.rO_erAHn811Sm0TR4TohQgHaHa?w=150&h=150&rs=1&pid=ImgDetMain.png" alt="Restoran Logo" class="logo">
+        </div>
+        <div class="nav">
+            <a href="index.html">MENU</a> | 
+            <a href="about.html">ABOUT</a>
+        </div>
 
-    <!-- Tabel Daftar Menu -->
-    <table border="1" cellpadding="10">
-      <tr>
-        <th>Daftar Makanan</th>
-        <th>Harga</th>
-      </tr>
-      <tr>
-        <td>Ayam Geprek</td>
-        <td>Rp 15,000</td>
-      </tr>
-      <tr>
-        <td>Rendang</td>
-        <td>Rp 20,000</td>
-      </tr>
-      <tr>
-        <td>Mie Ayam</td>
-        <td>Rp 12,000</td>
-      </tr>
-      <tr>
-        <td>Jus Avocado</td>
-        <td>Rp 5,000</td>
-      </tr>
-    </table>
+        <table>
+            <thead>
+                <tr>
+                    <th title="Nama Makanan">Nama Makanan</th>
+                    <th title="Harga Makanan">Harga Makanan</th>
+                    <th title="Tautan Makanan">Tautan Makanan</th>
+                    <th title="Gambar Makanan">Gambar Makanan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nasi Goreng</td>
+                    <td>Rp 20.000</td>
+                    <td><a href="https://example.com/nasi-goreng">Detail</a></td>
+                    <td><img src="nasi-goreng.jpg" alt="Nasi Goreng" class="food-image"></td>
+                </tr>
+                <tr>
+                    <td>Mie Ayam</td>
+                    <td>Rp 25.000</td>
+                    <td><a href="https://example.com/mie-ayam">Detail</a></td>
+                    <td><img src="mie-ayam.jpg" alt="Mie Ayam" class="food-image"></td>
+                </tr>
+                <tr>
+                    <td>Sate Ayam</td>
+                    <td>Rp 30.000</td>
+                    <td><a href="https://example.com/sate-ayam">Detail</a></td>
+                    <td><img src="sate-ayam.jpg" alt="Sate Ayam" class="food-image"></td>
+                </tr>
+            </tbody>
+        </table>
 
-    <!-- Form untuk Memesan Makanan -->
-    <h2>Form Pesanan</h2>
-    <form id="formPesanan">
-      <label><input type="checkbox" name="menu" value="Ayam Geprek" data-price="15000"> Ayam Geprek - Rp 15,000</label><br>
-      <label><input type="checkbox" name="menu" value="Rendang" data-price="20000"> Rendang - Rp 20,000</label><br>
-      <label><input type="checkbox" name="menu" value="Mie Ayam" data-price="12000"> Mie Ayam - Rp 12,000</label><br>
-      <label><input type="checkbox" name="menu" value="Jus Avocado" data-price="5000"> Jus Avocado - Rp 5,000</label><br><br>
-      <button type="button" onclick="tampilkanPesanan()">Selesai Pesan</button>
-    </form>
-  </center>
+        <h2>Pesanan</h2>
+        <form id="orderForm">
+            <label>
+                <input type="checkbox" name="food" value="Nasi Goreng"> Nasi Goreng
+            </label><br>
+            <label>
+                <input type="checkbox" name="food" value="Mie Ayam"> Mie Ayam
+            </label><br>
+            <label>
+                <input type="checkbox" name="food" value="Sate Ayam"> Sate Ayam
+            </label><br>
+            <button type="button" onclick="submitOrder()">Pesan</button>
+        </form>
 
-  <script src="script.js"></script>
+        <footer>
+            @Copyright Linda 2024
+        </footer>
+    </center>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
+   
