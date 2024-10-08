@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resep Makanan</title>
+  <style>
+     body {
+                font-family: 'Open Sans', sans-serif;
+     }
+     header {
+                min-height:100px;
+                border-bottom:2px solid green;
+     }
+     h1 {
+                font-size:28px;
+                color:green;
+                text-align:center;
+                border-style: dashed;
+                background:lightblue;
+                padding:10px;
+     }
+     h2 {
+                text-align: center;
+                color:green;
+                border-style: dashed;
+                border-radius: 10px;
+                background-color: lightblue;
+     }
+     ul {
+                font-size:20px;
+                color:green;
+                text-align:center;
+                padding:20px 10px;
+                padding:10px;
+     }
+     ul ul, ol {
+                padding: 0;
+                text-align: left;
+     }
+     li {
+                margin-bottom:10px;
+                border-bottom:1px solid #eaa454;
+                padding-bottom:5px;
+               
+                
+     }
+.bahan {
+    background-color: lightgreen; 
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+ .cara-membuat {
+    background-color: yellow;  
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  </style>
+</head>
+<body>
+    
+  <h1>Resep Makanan Favorit</h1>
+  <p style="text-align: center;">
+    <img src="https://www.sajianlezat.com/media/image/ayam/fried-chicken-geprek-sambal-bawang.jpg"width="200px"height="200px"><br>
+  </p>
+  <h2>Ayam Geprek</h2>
+  <ul>
+    <li><strong>Bahan:</strong>
+      <ul class="bahan">
+				<li>1 ekor daging ayam</li>
+				<li>tepung ayam goreng</li>
+				<li>2 butir telur</li>
+				<li>1 sdm garam</li>
+                <li>1 minyak goreng</li>
+				<li>4 cabe merah</li>
+				<li>3 cabe rawit</li>
+                <li>3 siung bawang merah</li>
+                <li>1/2 tomat</li>
+                <li>2 siung bawang putih</li>
+			</ul>
+		</li>
+		<li><strong>Cara membuat:</strong>
+			<ol class="cara-membuat">
+<li>Bersihkan dan cuci ayam hingga bersih, kemudian potong ayam menjadi beberapa bagian. Setelah itu balurkan garam untuk mengurasi bau amis.</li>
+<li>Siapkan wadah khusus untuk mengocok telur, masukan ayam kedalam telur yg sudah dikocok.</li>
+<li>Siapkan tepung dalam wadah, masukkan ayamnya pastikan ayam menyatu dengan tepung secara sempurna</li>
+<li>Panaskan minyak diwajan, masukkan ayam kedalam wajan dan tunggu hingga mateng dan crispy,jika sudah matang pindahkan dari wajan.</li>
+<li>Haluskan tomat, cebe merah,cabe rawit,bawang merah,bawang putih,dan garam.Kemudian tumis bumbu yang sudah dihaluskan.</li>
+<li>Ambil ayam yang sudah digoreng dan balurkan sambal diatasnya.</li>
+<li> Kemudian ayamnya digeprek hingga hancur</li>
+			</ol>
+		</li>
+	</ul>
+  <button onclick="CekResep()">Cek Resep</button>
+    <button onclick="window.print()">Cetak</button>
+   
+
+    <script>
+        function CekResep() {
+            console.log("Resep: Salad Buah");
+        }
+    </script>
+<footer>
+    <p>&copy; @copyright Linda Sari 2024</p>
+  </footer>
+
+</body>
+</html>
