@@ -1,34 +1,30 @@
-// Fungsi untuk membuat elemen input checkbox secara dinamis
-function buatCheckboxMakanan(namaMakanan, harga) {
-    const form = document.getElementById('formPesanan');
-    const label = document.createElement('label');
-    const input = document.createElement('input');
-    label.textContent = `${namaMakanan} (Rp ${harga})`;
-    input.type = 'checkbox';
-    input.name = namaMakanan;
-    label.appendChild(input);
-    form.appendChild(label);
-}
-
-// Fungsi untuk menampilkan pesanan di console
+// Fungsi untuk menampilkan hasil pesanan di dalam console
 function tampilkanPesanan() {
-    const form = document.getElementById('formPesanan');
-    const checkboxes = form.querySelectorAll('input[type="checkbox"]');
-    let pesanan = [];
+  // Mengambil semua checkbox yang dipilih
+  const checkboxes = document.querySelectorAll('input[name="menu"]:checked');
+  
+  let pesanan = [];
+  let totalHarga = 0;
 
-    checkboxes.forEach(checkbox => {
-        if (checkbox.checked) {
-            pesanan.push(checkbox.name);
-        }
-    });
+  // Looping setiap checkbox yang dipilih
+  checkboxes.forEach((checkbox) => {
+    const menu = checkbox.value;
+    const harga = parseInt(checkbox.getAttribute('data-price'));
 
-    console.log('Pesanan Anda:', pesanan);
+    // Menambahkan item pesanan ke array pesanan dan menghitung total harga
+    pesanan.push(menu);
+    totalHarga += harga;
+  });
+
+  // Menampilkan hasil pesanan di console
+  if (pesanan.length > 0) {
+    console.log("Anda memesan:", pesanan.join(", "));
+    console.log("Total harga: Rp", totalHarga);
+  } else {
+    console.log("Silakan pilih setidaknya satu menu.");
+  }
 }
 
-// Memanggil fungsi untuk membuat checkbox makanan secara dinamis
-buatCheckboxMakanan('Ayam Geprek', 15000);
-buatCheckboxMakanan('Rendang', 20000);
-buatCheckboxMakanan('Mie Ayam', 12000);
-buatCheckboxMakanan('Jus Avocado', 5000);
+
 
    
