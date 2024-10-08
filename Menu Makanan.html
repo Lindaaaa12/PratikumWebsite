@@ -1,68 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Menu Makanan</title>	
-  <link rel="stylesheet" href="styles.css">
-        </head>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Makanan</title>
+</head>
+<body>
+  <center>
+    <h1>Daftar Menu Restoran Linda</h1>
+
+    <!-- Tabel Daftar Menu -->
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Daftar Makanan</th>
+        <th>Harga</th>
+      </tr>
+      <tr>
+        <td>Ayam Geprek</td>
+        <td>Rp 15,000</td>
+      </tr>
+      <tr>
+        <td>Rendang</td>
+        <td>Rp 20,000</td>
+      </tr>
+      <tr>
+        <td>Mie Ayam</td>
+        <td>Rp 12,000</td>
+      </tr>
+      <tr>
+        <td>Jus Avocado</td>
+        <td>Rp 5,000</td>
+      </tr>
+    </table>
+
+    <!-- Form untuk Memesan Makanan -->
+    <h2>Form Pesanan</h2>
     <form id="formPesanan">
-        <h2>Form Pesanan</h2>
-        <button type="button" onclick="tampilkanPesanan()">Pesan</button>
+      <label><input type="checkbox" name="menu" value="Ayam Geprek" data-price="15000"> Ayam Geprek - Rp 15,000</label><br>
+      <label><input type="checkbox" name="menu" value="Rendang" data-price="20000"> Rendang - Rp 20,000</label><br>
+      <label><input type="checkbox" name="menu" value="Mie Ayam" data-price="12000"> Mie Ayam - Rp 12,000</label><br>
+      <label><input type="checkbox" name="menu" value="Jus Avocado" data-price="5000"> Jus Avocado - Rp 5,000</label><br><br>
+      <button type="button" onclick="tampilkanPesanan()">Selesai Pesan</button>
     </form>
+  </center>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-       <center> <h1 style="color:grey;font-family: Tahoma, Verdana, sans-serif;;"> Daftar Menu Restoran Linda</h1>
-       <div class="logo-container">
-      <img src="https://th.bing.com/th/id/OIP.rO_erAHn811Sm0TR4TohQgHaHa?w=150&h=150&rs=1&pid=ImgDetMain.png" alt="Restoran Logo" class="logo">
-    </div>
-    <div class="nav">
-        <a href="file:///C:/Users/linda/OneDrive/Documents/Semester%203/1.html">MENU</a> | 
-        <a href="file:///C:/Users/linda/OneDrive/Documents/Semester%203/pratikum1.2.html">ABOUT</a>
-    </div>
 
-        <table bgcolor="lightblue">
-            <tr bgcolor="blue" align="center" style="color:black, font-style: Intial;">
-
-                <th>Daftar Makanan</th>
-                <th>Harga</th>  
-                <th>Tautan</th>
-                <th>Menu</th>
-            </tr>
-            <tr>
-		<td>Ayam Geprek</td>
-			<td>Rp 15,000</td>
-			<td><a href="https://www.popmama.com/life/health/ainun/resep-ayam-geprek.html">Ayam geprek</a></td>
-              		 <td><img src="https://th.bing.com/th/id/OIP.ACevtdT5u6aRim6u_wFWOwHaHa?rs=1&pid=ImgDetMain.png" align="center" width="200px"height="150px"><br><br<td>
-
-           		</tr>
-		<tr>
-			<td>Rendang</td>
-			<td>Rp 20,000</td>
-            <td><a href="https://food.detik.com/info-kuliner/d-5115157/resep-rendang-daging-sapi-yang-empuk-enak-dan-sederhana.html">Rendang</a></td>	    <td><img src="https://th.bing.com/th/id/OIP.WTwG4R8zh4TrsiFmwbNHCQHaGU?rs=1&pid=ImgDetMain.png"width="200px"height="150px"><br><br<td>
-
-
-		</tr>
-		<tr>
-			<td>Mie Ayam</td>
-			<td>Rp 12,000</td>
-	    <td><a href="https://food.detik.com/mie-dan-pasta/d-6732007/resep-mie-ayam-sederhana-ala-rumahan-yang-gurih-mantul.html">Mie Ayam<a></td>
-            <td><img src="https://asiantoprecipes.weebly.com/uploads/5/3/4/0/5340076/12.jpg?718.jpg"width="200px"height="150px"><br><br<td>
-		</tr>
-                <tr>
-			<td>Jus Avocado</td>
-			<td>Rp 5,000</td>
-	     <td><a href="https://www.briliofood.net/resep/15-cara-membuat-aneka-jus-alpukat-lezat-dan-menyegarkan-2112286.html">Jus avocado<a></td>
-            <td><img src="https://3.bp.blogspot.com/-Y02wdah3tQQ/Ui6BfDayF2I/AAAAAAAAAdk/E4_Vyf1fDWE/s1600/JUS+ALPUKAT.jpg"width="200px"height="150px"><br><br<td>
-		</tr>
-
-	</table>
-
-</body>
-</html>
-        <footer>
-        <p>&copy; Copyright Linda Sari 2024</p>
-    </footer>
-</body>
-</html>
