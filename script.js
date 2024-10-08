@@ -1,3 +1,4 @@
+// Fungsi untuk membuat elemen input checkbox secara dinamis
 function buatCheckboxMakanan(namaMakanan, harga) {
     const form = document.getElementById('formPesanan');
     const label = document.createElement('label');
@@ -9,6 +10,7 @@ function buatCheckboxMakanan(namaMakanan, harga) {
     form.appendChild(label);
 }
 
+// Fungsi untuk menampilkan pesanan di console
 function tampilkanPesanan() {
     const form = document.getElementById('formPesanan');
     const checkboxes = form.querySelectorAll('input[type="checkbox"]');
@@ -23,6 +25,10 @@ function tampilkanPesanan() {
     console.log('Pesanan Anda:', pesanan);
 }
 
-// Contoh pemanggilan fungsi untuk membuat checkbox makanan secara dinamis
-buatCheckboxMakana('jus Avocado', 15000);
-// Tambahkan pemanggilan fungsi untuk menu makanan lainnya
+// Memanggil fungsi untuk membuat checkbox makanan secara dinamis
+buatCheckboxMakanan('Ayam Geprek', 15000);
+buatCheckboxMakanan('Rendang', 20000);
+buatCheckboxMakanan('Mie Ayam', 12000);
+buatCheckboxMakanan('Jus Avocado', 5000);
+
+   
