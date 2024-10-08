@@ -24,5 +24,5 @@ function tampilkanPesanan() {
 }
 
 // Contoh pemanggilan fungsi untuk membuat checkbox makanan secara dinamis
-buatCheckboxMakanan('Nasi Goreng', 15000);
+buatCheckboxMakana('jus Avocado', 15000);
 // Tambahkan pemanggilan fungsi untuk menu makanan lainnya
